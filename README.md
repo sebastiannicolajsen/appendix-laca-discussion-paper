@@ -32,6 +32,8 @@ The codebook used for the human-human part, report this here and explain the dif
 
 Refer to the files for doing the comparison (in code), and the entire analysis. Also include the visual project.
 
+Describe aitomics/aitomics-ui in brief, and explain how a python port is underway.
+
 ### Prompt
 
 Describe the prompt and how it differs
