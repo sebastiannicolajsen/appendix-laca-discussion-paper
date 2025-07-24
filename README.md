@@ -15,7 +15,7 @@ The goal of this example, is to apply **L**LM **A**ssisted **C**ontent **A**naly
 
 ## Complete dataset
 
-> [📊 Complete data set](./data/complete.json)
+> [📊 Complete data set](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/data/complete.json)
 
 We provide the complete data set utilised in the example of the paper. Note this is aggregated using semantic scholar, but, required changes due to registration mistakes (e.g., Koli Calling was wrongfully categorised under a different conference). An overview of the publications is shown here:
 
@@ -23,7 +23,7 @@ We provide the complete data set utilised in the example of the paper. Note this
 
 ### Sample data
 
-> [📊 Subset of data set](/data/subset.json)
+> [📊 Subset of data set](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/data/subset.json)
 
 We also provide the random subset of 10% of the data. An overview of the subset is shown here:
 
@@ -31,15 +31,15 @@ We also provide the random subset of 10% of the data. An overview of the subset 
 
 ## Codebook
 
-> [📚 Codebook](/codebook.md)
+> [📚 Codebook](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/codebook.md)
 
 The codebook used for the human-human comparison can also be found here. As stated before, it builds on the work of Simon & Sheard [1].
 
 ## LLM workflow
 
-> [🤖 LLM workflow](/llm-workflow/README.md)
+> [🤖 LLM workflow](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/llm-workflow/README.md)
 
-While we cannot explain many details about the actual library due to the review process, we do provide more information, anonymised code/visual project, and prompt [here](/llm-workflow/README.md).
+While we cannot explain many details about the actual library due to the review process, we do provide more information, anonymised code/visual project, and prompt [here](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/llm-workflow/README.md).
 
 
 ## references
