@@ -1,0 +1,13 @@
+Given the course objectives, determine which of the following themes are covered by the course. The theme of a paper is what the paper is about, and is not to be confused with its context. A paper in the context of a formal methods course might be about how the course is taught, or about a tool to assist with assessment in the course, or about gender issues in the course, and so on; these would be the themes of these papers.Some papers do not have a single clear theme: a paper might be about the introduction of a flipped classroom and its impact on female students; its theme might then be either teaching/learning techniques or gender issues. the following are the themes:
+
+- Teaching/learning techniques
+- Teaching/learning tools
+- Curriculum
+- Ability/aptitude/understanding
+- Assessment tools
+- Assessment techniques
+- Teaching/learning theories & models
+- Recruitment, progression, pathways
+- Online/distance delivery
+- Educational technology
+- Gender issues

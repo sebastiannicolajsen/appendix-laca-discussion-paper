@@ -1,0 +1,220 @@
+{
+  "projects": [
+    {
+      "id": "5b57c238-a02a-4cbc-93e7-1757aa32fa2b",
+      "name": "LLM theme analysis",
+      "description": "",
+      "blocks": [
+        {
+          "id": "176bb1d6-2bd3-400b-be5f-5b040884ff48",
+          "type": "import",
+          "name": "Import abstracts",
+          "content": "",
+          "position": {
+            "x": 348.55184922642536,
+            "y": -579.0886777315384
+          },
+          "file": "/Users/unknown/Documents/Repositories/discussion-paper-analysis/data/simplifiedcodedsample.json",
+          "actionId": "built-in-1",
+          "config": {
+            "Attribute Path": "abstract"
+          }
+        },
+        {
+          "id": "1bac545e-c56f-431f-bd99-e7644ac42870",
+          "type": "transform",
+          "name": "Apply prompt to abstract",
+          "content": "",
+          "position": {
+            "x": 669.6271174744344,
+            "y": -463.61989552564467
+          },
+          "actionId": "built-in-3",
+          "config": {
+            "prompt": "Given the course objectives, determine which of the following themes are covered by the course. The theme of a paper is what the paper is about, and is not to be confused with its context. A paper in the context of a formal methods course might be about how the course is taught, or about a tool to assist with assessment in the course, or about gender issues in the course, and so on; these would be the themes of these papers.Some papers do not have a single clear theme: a paper might be about the introduction of a flipped classroom and its impact on female students; its theme might then be either teaching/learning techniques or gender issues. Reply with only the themes that are covered by the course, separated by underscore (_):\n\n\"Teaching/learning techniques\", \"Teaching/learning tools\",  \"Curriculum\",  \"Ability/aptitude/understanding\", \"Assessment tools\",    \"Assessment techniques\", \"Teaching/learning theories & models\", \"Recruitment, progression, pathways\", \"Online/distance delivery\",    \"Educational technology\",  \"Gender issues\"\n"
+          }
+        },
+        {
+          "id": "9472aeed-2960-42b9-8f4b-e07d5dbb154d",
+          "type": "comparison",
+          "name": "Compare codings",
+          "content": "",
+          "position": {
+            "x": 1293.4126692647005,
+            "y": -290.7353793126727
+          },
+          "actionId": "built-in-11",
+          "config": {
+            "categories": [
+              "Teaching/learning techniques",
+              "Teaching/learning tools",
+              "Curriculum",
+              "Ability/aptitude/understanding",
+              "Assessment tools",
+              "Assessment techniques",
+              "Teaching/learning theories & models",
+              "Recruitment, progression, pathways",
+              "Online/distance delivery",
+              "Educational technology",
+              "Gender issues"
+            ]
+          }
+        },
+        {
+          "id": "78e98b39-e367-48a3-b091-98949eed0dbe",
+          "type": "import",
+          "name": "Import human codings",
+          "content": "",
+          "position": {
+            "x": 354.29866338162435,
+            "y": -372.4332611333307
+          },
+          "file": "/Users/unknown/Documents/Repositories/discussion-paper-analysis/data/simplifiedcodedsample.json"
+        },
+        {
+          "id": "8db9bf77-c978-430c-8866-28617bc41bd4",
+          "type": "transform",
+          "name": "Make list of LLM generated codes",
+          "content": "",
+          "position": {
+            "x": 1005.5843658267786,
+            "y": -578.0480704053958
+          },
+          "actionId": "62d181f9-e6f9-4717-8813-45b603f66a3c",
+          "config": {
+            "Character": "_"
+          }
+        },
+        {
+          "id": "888fd3df-d466-40a8-9961-2a83af08328e",
+          "type": "export",
+          "name": "Save LLM codings",
+          "content": "",
+          "position": {
+            "x": 1513.0047151842864,
+            "y": -529.7890506984712
+          },
+          "outputFilename": "llm-simon-analysis",
+          "actionId": "built-in-8",
+          "config": {},
+          "outputPath": "/Users/unknown/Documents/Repositories/discussion-paper-analysis/outputs"
+        },
+        {
+          "id": "75294ac3-f662-4960-b966-9b15982857ed",
+          "type": "export",
+          "name": "Save alpha",
+          "content": "",
+          "position": {
+            "x": 1569.6108080616607,
+            "y": -160.23383853360477
+          },
+          "outputPath": "/Users/unknown/Documents/Repositories/discussion-paper-analysis/outputs",
+          "actionId": "built-in-8",
+          "config": {}
+        }
+      ],
+      "edges": [
+        {
+          "id": "46ebad31-ac1d-4779-8549-da190132c783",
+          "source": "176bb1d6-2bd3-400b-be5f-5b040884ff48",
+          "target": "1bac545e-c56f-431f-bd99-e7644ac42870",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "e78588f6-1803-4706-a838-cb732d4e6521",
+          "source": "1bac545e-c56f-431f-bd99-e7644ac42870",
+          "target": "8db9bf77-c978-430c-8866-28617bc41bd4",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "37f0bfe9-0a96-4dcc-b541-7fe0d6080a6d",
+          "source": "8db9bf77-c978-430c-8866-28617bc41bd4",
+          "target": "9472aeed-2960-42b9-8f4b-e07d5dbb154d",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "0e82f8ef-c897-4abf-b263-f1dbd8754e5f",
+          "source": "78e98b39-e367-48a3-b091-98949eed0dbe",
+          "target": "9472aeed-2960-42b9-8f4b-e07d5dbb154d",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "1e92c58e-ff45-41cc-a1aa-ff210666b188",
+          "source": "8db9bf77-c978-430c-8866-28617bc41bd4",
+          "target": "888fd3df-d466-40a8-9961-2a83af08328e",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "e9056795-a283-4fc8-a1c2-ccadf77d9c5b",
+          "source": "9472aeed-2960-42b9-8f4b-e07d5dbb154d",
+          "target": "75294ac3-f662-4960-b966-9b15982857ed",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        },
+        {
+          "id": "f98cce4f-f17b-4458-978c-675fe1f8c14e",
+          "source": "176bb1d6-2bd3-400b-be5f-5b040884ff48",
+          "target": "c9f5b1ca-e911-498a-b4e0-5d184314b9aa",
+          "sourceHandle": null,
+          "targetHandle": null,
+          "type": "custom",
+          "markerEnd": {
+            "type": "arrowclosed"
+          },
+          "style": {
+            "stroke": "#666666"
+          }
+        }
+      ],
+      "createdAt": "2025-07-15T15:22:57.130Z",
+      "updatedAt": "2025-07-24T12:12:39.489Z"
+    }
+  ]
+}
