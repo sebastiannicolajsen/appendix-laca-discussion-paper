@@ -19,7 +19,7 @@ The goal of this example, is to apply **L**LM **A**ssisted **C**ontent **A**naly
 
 We provide the complete data set utilised in the example of the paper. Note this is aggregated using semantic scholar, but, required changes due to registration mistakes (e.g., Koli Calling was wrongfully categorised under a different conference). An overview of the publications is shown here:
 
-![Overview of complete dataset](/images/complete.png)
+![Overview of complete dataset](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/images/complete.png)
 
 ### Sample data
 
@@ -27,7 +27,7 @@ We provide the complete data set utilised in the example of the paper. Note this
 
 We also provide the random subset of 10% of the data. An overview of the subset is shown here:
 
-![Overview of subset of dataset](/images/subset.png)
+![Overview of subset of dataset](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/images/subset.png)
 
 ## Codebook
 

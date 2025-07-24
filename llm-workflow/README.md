@@ -2,7 +2,7 @@
 # LLM workflow
 During the review phase we cannot disclose the actual name of the library used as it is tied to our names. However, we here provide the code as it would run, if the proper NPM package was to be installed or the visual tool. Currently, the library only supports Javascript while a Python port is in progress. The visual tool utilises this very same library.
 
-![image of visual tool](/images/visual-analysis.png)
+![image of visual tool](https://github.com/sebastiannicolajsen/appendix-towards-an-approach-for-using-llms-for-content-analysis/blob/main/images/visual-analysis.png)
 
 ## Project file
 We provide the [project file](/llm-workflow/project-file.json) for the flow shown in the paper. Importing this in the visual tool gives you access to executing the flow from there.
