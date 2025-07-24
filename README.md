@@ -15,7 +15,7 @@ The goal of this example, is to apply **L**LM **A**ssisted **C**ontent **A**naly
 
 ## Complete dataset
 
-> [📊 Complete data set](/data/complete.json)
+> [📊 Complete data set](./data/complete.json)
 
 We provide the complete data set utilised in the example of the paper. Note this is aggregated using semantic scholar, but, required changes due to registration mistakes (e.g., Koli Calling was wrongfully categorised under a different conference). An overview of the publications is shown here:
 
