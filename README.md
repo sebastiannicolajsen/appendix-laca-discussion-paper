@@ -1,4 +1,4 @@
-# Towards an Approach for using LLMs for Content Analysis
+# Empowering Computing Education Researchers Through LLM-Assisted Content Analysis
 
 This repository contains the necessary documentation for conducting the analysis explained in the paper of the same name. **Currently, all links in the paper regarding the library or visual tool will also redirect you to this location as not to disclose author information**
 
